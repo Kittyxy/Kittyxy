@@ -13,7 +13,7 @@ main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(0, 0, 0, 0)
 main.Position = UDim2.new(0.193766937, 0, 0.268924296, 0)
-main.Size = UDim2.new(0, 190, 0, 55)
+main.Size = UDim2.new(0, 200, 0, 87)
 main.Active = true
 main.Draggable = true
 
@@ -22,7 +22,7 @@ Autofarmbutton.Parent = main
 Autofarmbutton.BackgroundColor3 = Color3.fromRGB(255, 205, 199)
 Autofarmbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Autofarmbutton.Position = UDim2.new(0.265356272, 0, 0.389985502, 0)
-Autofarmbutton.Size = UDim2.new(0, 151, 0, 28)
+Autofarmbutton.Size = UDim2.new(0, 191, 0, 50)
 Autofarmbutton.Font = Enum.Font.FredokaOne
 Autofarmbutton.Text = "AUTOFARM"
 Autofarmbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
