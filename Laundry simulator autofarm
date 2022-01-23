@@ -26,7 +26,7 @@ Autofarmbutton.Size = UDim2.new(0, 191, 0, 50)
 Autofarmbutton.Font = Enum.Font.FredokaOne
 Autofarmbutton.Text = "AUTOFARM"
 Autofarmbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
-Autofarmbutton.TextSize = 14.000
+Autofarmbutton.TextSize = 18.000
 Autofarmbutton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/TTJfkprd", true))()
 end)
@@ -39,7 +39,7 @@ textdont.Size = UDim2.new(0, 191, 0, 50)
 textdont.Font = Enum.Font.FredokaOne
 textdont.Text = "Laundry Simulator (Beta) AUTOFARM"
 textdont.TextColor3 = Color3.fromRGB(0, 0, 0)
-textdont.TextSize = 14.000
+textdont.TextSize = 18.000
 
 --
 	
