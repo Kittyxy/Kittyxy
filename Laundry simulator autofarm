@@ -11,39 +11,49 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
 main.Parent = ScreenGui
-main.BackgroundColor3 = Color3.fromRGB(0, 0, 0, 0)
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 main.Position = UDim2.new(0.193766937, 0, 0.268924296, 0)
-main.Size = UDim2.new(0, 403, 0, 232)
+main.Size = UDim2.new(0, 405, 0, 230)
 main.Active = true
 main.Draggable = true
 
 Autofarmbutton.Name = "Autofarm button"
 Autofarmbutton.Parent = main
-Autofarmbutton.BackgroundColor3 = Color3.fromRGB(255, 205, 199)
+Autofarmbutton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Autofarmbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Autofarmbutton.Position = UDim2.new(0.265356272, 0, 0.389985502, 0)
-Autofarmbutton.Size = UDim2.new(0, 191, 0, 50)
+Autofarmbutton.Size = UDim2.new(0, 189, 0, 48)
 Autofarmbutton.Font = Enum.Font.FredokaOne
-Autofarmbutton.Text = "AUTOFARM"
-Autofarmbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
-Autofarmbutton.TextSize = 18.000
+Autofarmbutton.Text = "Arcade"
+Autofarmbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Autofarmbutton.TextSize = 16.000
 Autofarmbutton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/TTJfkprd", true))()
 end)
 
 textdont.Name = "textdont"
 textdont.Parent = main
-textdont.BackgroundColor3 = Color3.fromRGB(180, 193, 255)
+textdont.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 textdont.BorderSizePixel = 0
-textdont.Size = UDim2.new(0, 191, 0, 50)
-textdont.Font = Enum.Font.FredokaOne
+textdont.Size = UDim2.new(0, 405, 0, 41)
+textdont.Font = Enum.Font.Arcade
 textdont.Text = "Laundry Simulator (Beta) AUTOFARM"
-textdont.TextColor3 = Color3.fromRGB(0, 0, 0)
-textdont.TextSize = 18.000
+textdont.TextColor3 = Color3.fromRGB(255, 255, 255)
+textdont.TextSize = 16.000
 
 --
+
+local function GRKPWZ_fake_script() -- textdont.LOCALDONTSCRIPT 
+	local script = Instance.new('LocalScript', textdont)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
 	
 		counter = counter + 0.01
 	end
 end
-
+coroutine.wrap(GRKPWZ_fake_script)()
